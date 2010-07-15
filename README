@@ -1,0 +1,65 @@
+Welcome to the CSSColumns wiki!
+
+Have you ever wanted to quickly create columns with your html layouts without using tables? Well the "cols.css" stylesheet included in this package is an attempt to do just that.
+
+
+Installation
+---------------------------------------
+---------------------------------------
+
+1. Copy "cols.css" to the folder where your html document is located. In this case, we're adding it within a "stylesheets" folder.
+
+2. link "cols.css" to the html document where you want to have columns.
+
+Example:
+
+<head>
+...
+<link href="stylesheets/cols.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+
+How to use
+---------------------------------------
+---------------------------------------
+
+To begin use the <div> element with a "row" class to create a row.
+
+  <div class="row">
+
+  </div>
+
+
+Let's start with a 2 column layout. To make the columns, insert 2 more divs within the row div.
+
+  <div class="row">
+
+    <div></div>
+
+    <div></div>
+
+  </div>
+
+
+Now add another class to the row div to tell it how many columns to expect. In this case, "cols2" for a 2 column layout.
+We will also add some content to our columns so we can see the results.
+
+  <div class="row cols2">
+
+    <div><p>Column 1 content</p></div>
+
+    <div><p>Column 2 content</p></div>
+
+  </div>
+
+That's all there is to it. So if we want to do 2-column layout, we'll use the "cols3" class and so on…
+
+  <div class="row cols3">
+
+    <div><p>Column 1 content</p></div>
+
+    <div><p>Column 2 content</p></div>
+
+    <div><p>Column 3 content</p></div>
+
+  </div>
