@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+
+/* Basic Row Setup */
+
+.row {
+  clear:both;
+}
+
+.row > div { /* columns within rows, formed from <div>s */
+  float:left;
+  display:inline;
+}
+
+.row > li { /* columns within rows, formed from a <ul>s (unordered lists) */
+  float:left;
+  display:inline;
+}
+
+.row > div:first-child,
+.row > li:first-child {
+  margin-left:0px;
+  clear:left;
+}
+
+/* 2 column row structure */
+
+.cols2 > div,
+.cols2 > li { /*  alternative to "half" */
+  width:48.25%;
+  margin-left:3.5%;
+}
+
+* + html .cols2 > div,
+* + html .cols2 > li { /*  alternative to "half" */
+  width:48%;
+}
+
+/* 3 column row structure */
+
+.cols3 > div,
+.cols3 > li {
+  width:31%;
+  margin-left:3.5%;
+}
+
+* + html .cols3 > div,
+* + html .cols3 > li { /*  alternative to "half" */
+  width:30.98%;
+}
+
+.cols3 > .span2 {
+  width:65.5%;
+}
+
+/* 4 column row structure */
+
+.cols4 > div,
+.cols4 > li {
+  width:23.5%;
+  margin-left:2%;
+}
+
+* + html .cols4 > div,
+* + html .cols4 > li {
+  width:23.3%;
+  margin-left:2%;
+}
+
+.cols4 > .span2 {
+  width:49%;
+}
+
+.cols4 > .span3 {
+  width:74.5%;
+}
+
+/* 5 column row structure */
+
+.cols5 > div,
+.cols5 > li {
+  width:18%;
+  margin-left:2.5%;
+}
+
+.cols5 > .span2 {
+  width:38.5%;
+}
+
+.cols5 > .span3 {
+  width:59%;
+}
+
+.cols5 > .span4 {
+  width:79.5%;
+}
+
+/* 6 column row structure */
+
+.cols6 > div {
+  width:15%;
+  margin-left:2%;
+}
+
+.cols6 > .span2 {
+  width:34%;
+}
+
+.cols6 > .span3 {
+  width:49%;
+}
+
+.cols6 > .span4 {
+  width:68%;
+}
+
+/* 8 column row structure */
+
+.cols8 > div {
+  width:10.75%;
+  margin-left:2%;
+}
+
+.cols8 > .span2 {
+  width:23.5%;
+}
+
+.cols8 > .span3 {
+  width:36.25%;
+}
+
+.cols8 > .span4 {
+  width:49%;
+}
+
+.cols8 > .span5 {
+  width:61.75%;
+}
+
+.cols8 > .span6 {
+  width:74.5%;
+}
+
+.cols8 > .span7 {
+  width:89.25%;
+}
+
+/* Clearfix applied to row */
+
+div.row:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+div.row {
+  display: inline-block;
+}
+
+html[xmlns] div.row {
+  display: block;
+}
+
+* html div.row {
+  height: 1%;
+}
