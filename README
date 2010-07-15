@@ -1,5 +1,3 @@
-Welcome to the CSSColumns wiki!
-
 Have you ever wanted to quickly create columns with your html layouts without using tables? 
 Well the "cols.css" stylesheet included in this package is an attempt to do just that.
 
